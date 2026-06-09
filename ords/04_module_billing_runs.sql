@@ -12,7 +12,7 @@ BEGIN
     ORDS.DEFINE_MODULE(
         p_module_name    => 'pvs_demo_billing',
         p_base_path      => '/billing/',
-        p_items_per_page => 25,
+        p_items_per_page => 10,
         p_status         => 'PUBLISHED',
         p_comments       => 'Billing API module for PVS ORDS demo'
     );
@@ -40,7 +40,7 @@ BEGIN
             FROM billing_runs
             ORDER BY billing_run_id DESC
         ]',
-        p_items_per_page => 25
+        p_items_per_page => 10
     );
 
     COMMIT;
